@@ -1,4 +1,4 @@
-package com.brunoyam.unit_2.models.army;
+package com.brunoyam.IO.models.army;
 
 public interface Shootable {
 

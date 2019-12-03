@@ -1,16 +1,21 @@
-package com.brunoyam.unit_2.services.impl;
+package com.brunoyam.IO.services.impl;
 
-import com.brunoyam.unit_2.DAO.BattleFieldDAO;
-import com.brunoyam.unit_2.models.BattleField;
-import com.brunoyam.unit_2.models.army.AbstractUnit;
-import com.brunoyam.unit_2.services.CurrentBattleField;
+import com.brunoyam.IO.DAO.BattleFieldDAO;
+import com.brunoyam.IO.models.BattleField;
+import com.brunoyam.IO.models.army.AbstractUnit;
+import com.brunoyam.IO.services.CurrentBattleFieldService;
 
-public class CurrentBattleFieldImpl implements CurrentBattleField {
+/**
+ * Реализация интерфейса com.brunoyam.IO.services.CurrentBattleFieldService
+ */
+public class CurrentBattleFieldServiceImpl implements CurrentBattleFieldService {
 
     private BattleFieldDAO battleFieldDAO;
     private BattleField currentBattleField;
 
-    public CurrentBattleFieldImpl(BattleFieldDAO battleFieldDAO) {
+    public CurrentBattleFieldServiceImpl() {}
+
+    public CurrentBattleFieldServiceImpl(BattleFieldDAO battleFieldDAO) {
         this.battleFieldDAO = battleFieldDAO;
     }
 

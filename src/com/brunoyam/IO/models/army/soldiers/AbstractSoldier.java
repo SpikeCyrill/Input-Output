@@ -1,6 +1,6 @@
-package com.brunoyam.unit_2.models.army.soldiers;
+package com.brunoyam.IO.models.army.soldiers;
 
-import com.brunoyam.unit_2.models.army.AbstractUnit;
+import com.brunoyam.IO.models.army.AbstractUnit;
 
 abstract class AbstractSoldier extends AbstractUnit {
 

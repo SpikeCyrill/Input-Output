@@ -1,12 +1,15 @@
-package com.brunoyam.unit_2.controllers;
+package com.brunoyam.IO.controllers;
 
-import com.brunoyam.unit_2.services.impl.CurrentBattleFieldImpl;
+import com.brunoyam.IO.services.impl.CurrentBattleFieldServiceImpl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
+/**
+ * Класс-контроллер, перехватывающий и обрабатывающий сообщения пользователя в консоли.
+ */
 public class ConsoleController {
 
     public void listenConsole() throws IOException {
@@ -18,13 +21,13 @@ public class ConsoleController {
             System.out.println("есть " + command);
             switch (command) {
                 case "new":
-                    new CurrentBattleFieldImpl().newGame();
+                    new CurrentBattleFieldServiceImpl().newGame();
                     break;
                 case "save":
-                    new CurrentBattleFieldImpl().saveGame();
+                    new CurrentBattleFieldServiceImpl().saveGame();
                     break;
                 case "load":
-                    new CurrentBattleFieldImpl().loadGame();
+                    new CurrentBattleFieldServiceImpl().loadGame();
                     break;
                 case "exit":
                     return;

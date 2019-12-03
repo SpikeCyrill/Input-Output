@@ -1,14 +1,14 @@
-package com.brunoyam.unit_2;
+package com.brunoyam.IO;
 
 
-import com.brunoyam.unit_2.models.army.Shootable;
-import com.brunoyam.unit_2.models.army.Shooter;
-import com.brunoyam.unit_2.models.army.machines.Tank;
-import com.brunoyam.unit_2.models.army.machines.Transport;
-import com.brunoyam.unit_2.models.army.soldiers.Medic;
-import com.brunoyam.unit_2.models.army.soldiers.Sniper;
-import com.brunoyam.unit_2.models.army.soldiers.Trooper;
-import com.brunoyam.unit_2.controllers.ConsoleController;
+import com.brunoyam.IO.models.army.Shootable;
+import com.brunoyam.IO.models.army.Shooter;
+import com.brunoyam.IO.models.army.machines.Tank;
+import com.brunoyam.IO.models.army.machines.Transport;
+import com.brunoyam.IO.models.army.soldiers.Medic;
+import com.brunoyam.IO.models.army.soldiers.Sniper;
+import com.brunoyam.IO.models.army.soldiers.Trooper;
+import com.brunoyam.IO.controllers.ConsoleController;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class Application {
         APP_PROPERTIES.load(new FileInputStream("resources/application.properties"));
 
         ResourceBundle resources =
-                ResourceBundle.getBundle("multilang/names", Locale.ENGLISH);
+                ResourceBundle.getBundle("multylang/names", Locale.ENGLISH);
 
         ConsoleController controller = new ConsoleController();
         controller.listenConsole();

@@ -1,6 +1,6 @@
-package com.brunoyam.unit_2.models.army.machines;
+package com.brunoyam.IO.models.army.machines;
 
-import com.brunoyam.unit_2.models.army.Shootable;
+import com.brunoyam.IO.models.army.Shootable;
 
 public class Transport extends AbstractMachine implements Shootable {
 

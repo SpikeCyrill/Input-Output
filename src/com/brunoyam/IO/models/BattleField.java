@@ -1,10 +1,19 @@
-package com.brunoyam.unit_2.models;
+package com.brunoyam.IO.models;
 
-import com.brunoyam.unit_2.models.army.AbstractUnit;
+import com.brunoyam.IO.models.army.AbstractUnit;
 
+/**
+ * Класс представляет поле битвы.
+ */
 public class BattleField {
 
+    /**
+     * Армия игрока 1
+     */
     private AbstractUnit[] army1;
+    /**
+     * Армия игрока 2
+     */
     private AbstractUnit[] army2;
 
     public BattleField(AbstractUnit[] army1, AbstractUnit[] army2) {
